@@ -1,7 +1,7 @@
-import { WaIcon, IgIcon, TtIcon, PinIcon } from './Icons'
+import { WaIcon, IgIcon, TtIcon, PinIcon } from "./Icons";
 
 export default function Footer() {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-bara-deep text-cream-light grain relative overflow-hidden">
@@ -10,7 +10,8 @@ export default function Footer() {
         <div
           className="mb-12 rounded-xl"
           style={{
-            background: 'repeating-linear-gradient(90deg, #B89972 0 14px, #F4ECDA 14px 28px)',
+            background:
+              "repeating-linear-gradient(90deg, #B89972 0 14px, #F4ECDA 14px 28px)",
             height: 10,
           }}
         />
@@ -23,34 +24,46 @@ export default function Footer() {
                 src="/bara-logo.jpeg"
                 alt=""
                 className="w-12 h-12 rounded-full ring-2 ring-cream-light/30 object-cover"
-                onError={(e) => { e.target.style.display = 'none' }}
+                onError={(e) => {
+                  e.target.style.display = "none";
+                }}
               />
               <div className="leading-none">
                 <p className="wordmark text-cream-light text-2xl">BARA</p>
-                <p className="font-body font-semibold text-cream-light/65 text-[10px] tracking-[0.3em] uppercase">coffee</p>
+                <p className="font-body font-semibold text-cream-light/65 text-[10px] tracking-[0.3em] uppercase">
+                  coffee
+                </p>
               </div>
             </div>
             <p className="font-hand text-cream-light text-3xl md:text-4xl leading-tight mb-4">
-              Take it, drink it.<br />Kopi keliling Sukabumi.
+              Take it, drink it.
+              <br />
+              Kopi keliling Sukabumi.
             </p>
             <p className="text-cream-light/70 text-sm leading-relaxed max-w-xs">
-              Jl. Sarasa, sebelah kampus IPB Sukabumi. Buka setiap hari, 08.00 – 22.00 WIB.
+              Jl. Sarasa, sebelah kampus IPB Sukabumi. Buka setiap hari, 08.00 –
+              22.00 WIB.
             </p>
           </div>
 
           {/* Nav links */}
           <div className="md:col-span-3">
-            <p className="text-tan-light uppercase text-[10px] tracking-[0.25em] font-bold mb-4">Jelajahi</p>
+            <p className="text-tan-light uppercase text-[10px] tracking-[0.25em] font-bold mb-4">
+              Jelajahi
+            </p>
             <ul className="space-y-3">
               {[
-                ['#menu',    'Menu'],
-                ['#about',   'Tentang'],
-                ['#testi',   'Testimoni'],
-                ['#gallery', 'Galeri'],
-                ['#contact', 'Kontak'],
+                ["#menu", "Menu"],
+                ["#about", "Tentang"],
+                ["#testi", "Testimoni"],
+                ["#gallery", "Galeri"],
+                ["#contact", "Kontak"],
               ].map(([h, t]) => (
                 <li key={h}>
-                  <a href={h} className="text-cream-light hover:text-cream-light/70 transition-colors inline-flex items-center gap-2 group">
+                  <a
+                    href={h}
+                    className="text-cream-light hover:text-cream-light/70 transition-colors inline-flex items-center gap-2 group"
+                  >
                     <span className="w-3 h-px bg-cream-light/40 group-hover:bg-cream-light transition-colors" />
                     {t}
                   </a>
@@ -61,13 +74,35 @@ export default function Footer() {
 
           {/* Social / contact */}
           <div className="md:col-span-4">
-            <p className="text-tan-light uppercase text-[10px] tracking-[0.25em] font-bold mb-4">Hubungi & Ikuti</p>
+            <p className="text-tan-light uppercase text-[10px] tracking-[0.25em] font-bold mb-4">
+              Hubungi & Ikuti
+            </p>
             <ul className="space-y-3">
               {[
-                { href: 'https://wa.me/6281298918270',           Icon: WaIcon,  label: 'WhatsApp',    sub: '0812 9891 8270' },
-                { href: 'https://instagram.com/__baracoffee',    Icon: IgIcon,  label: 'Instagram',   sub: '@__baracoffee' },
-                { href: 'https://tiktok.com/@bara.coffee',       Icon: TtIcon,  label: 'TikTok',      sub: '@bara.coffee' },
-                { href: 'https://maps.app.goo.gl/QRK9ardKptL9gHrZA', Icon: PinIcon, label: 'Google Maps', sub: 'Jl. Sarasa, Sukabumi' },
+                {
+                  href: "https://wa.me/6281298918270",
+                  Icon: WaIcon,
+                  label: "WhatsApp",
+                  sub: "0812 9891 8270",
+                },
+                {
+                  href: "https://instagram.com/__baracoffee",
+                  Icon: IgIcon,
+                  label: "Instagram",
+                  sub: "@__baracoffee",
+                },
+                {
+                  href: "https://tiktok.com/@bara.coffee",
+                  Icon: TtIcon,
+                  label: "TikTok",
+                  sub: "@bara.coffee",
+                },
+                {
+                  href: "https://maps.app.goo.gl/QRK9ardKptL9gHrZA",
+                  Icon: PinIcon,
+                  label: "Google Maps",
+                  sub: "Jl. Sarasa, loasari, Babakan, Kec. Cibeureum, Kota Sukabumi, Jawa Barat 43165",
+                },
               ].map(({ href, Icon, label, sub }) => (
                 <li key={label}>
                   <a
@@ -96,7 +131,7 @@ export default function Footer() {
       <div className="relative max-w-7xl mx-auto px-5 md:px-8 pb-2 select-none pointer-events-none">
         <p
           className="footer-wordmark text-center"
-          style={{ fontSize: 'clamp(5rem, 22vw, 22rem)' }}
+          style={{ fontSize: "clamp(5rem, 22vw, 22rem)" }}
         >
           BARA
         </p>
@@ -105,10 +140,14 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="relative border-t border-cream-light/15">
         <div className="max-w-6xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-cream-light/60">
-          <p>© {year} Bara Coffee · Kedai Kopi Sukabumi · All rights reserved</p>
-          <p className="font-hand text-base text-cream-light/80">Take it, drink it.</p>
+          <p>
+            © {year} Bara Coffee · Kedai Kopi Sukabumi · All rights reserved
+          </p>
+          <p className="font-hand text-base text-cream-light/80">
+            Take it, drink it.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
