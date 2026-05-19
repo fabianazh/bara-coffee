@@ -1,0 +1,52 @@
+export const CATEGORIES = [
+  { id: 'coffee',    label: 'Coffee' },
+  { id: 'noncoffee', label: 'Non-Coffee' },
+  { id: 'food',      label: 'Foods' },
+  { id: 'snacks',    label: 'Snacks' },
+]
+
+export const MENUS = {
+  coffee: [
+    { name: 'Kopi Susu Bara',                price: '20',    tag: 'Signature',   desc: 'Espresso, susu segar, gula aren — racikan khas Bara.' },
+    { name: 'Spanish Latte',                 price: '20',                        desc: 'Espresso dengan susu kental manis, smooth & creamy.' },
+    { name: 'Butterscotch / Salted Caramel', price: '22',    tag: 'Best Seller', desc: 'Pilih butterscotch atau salted caramel, sesuai mood.' },
+    { name: 'Hazelnut / Caramel',            price: '22',                        desc: 'Kopi susu hazelnut atau caramel klasik.' },
+    { name: 'Lemoricano',                    price: '20',                        desc: 'Espresso shot dengan perasan lemon segar.' },
+    { name: 'Americano',                     price: '17',                        desc: 'Espresso + air panas. Bold, simple, classic.' },
+    { name: 'Cappucino / Latte',             price: '20',                        desc: 'Espresso dengan milk foam yang lembut.' },
+    { name: 'Mocha',                         price: '20',                        desc: 'Espresso, susu, dengan sentuhan cokelat.' },
+    { name: 'Es Teh Kopi Susu',              price: '15',                        desc: 'Kombinasi unik teh dan kopi susu.' },
+  ],
+  noncoffee: [
+    { name: 'Matcha',                        price: '20',    tag: 'New',         desc: 'Matcha latte premium, earthy & creamy.' },
+    { name: 'Thaitea',                       price: '15',                        desc: 'Teh Thailand orisinal, manis & menyegarkan.' },
+    { name: 'Thai Greentea',                 price: '17',                        desc: 'Versi green tea dari thaitea favorit kalian.' },
+    { name: 'Chocolate',                     price: '18',                        desc: 'Cokelat susu hangat / dingin, rich & sweet.' },
+    { name: 'Soda Gembira',                  price: '15',                        desc: 'Soda susu dengan sirup merah, throwback rasa.' },
+    { name: 'Soda Susu Strawberry / Melon',  price: '15',                        desc: 'Soda susu fruity, segar dan colorful.' },
+    { name: 'Lychee Tea / Yakult',           price: '15',                        desc: 'Lychee dipadukan teh atau yakult.' },
+    { name: 'Mango Peach Yakult',            price: '20',    tag: 'Best Seller', desc: 'Mango + peach + yakult — surga buah.' },
+    { name: 'Mangocolada / Marikisa Tea',    price: '22',                        desc: 'Tropical blend yang bikin happy.' },
+  ],
+  food: [
+    { name: 'Nasi Goreng Bara',              price: '25',    tag: 'Signature',   desc: 'Nasi goreng resep khas Bara dengan topping pilihan.' },
+    { name: 'Nasi Goreng Ayam',              price: '20',                        desc: 'Nasi goreng klasik + ayam suwir, porsi mengenyangkan.' },
+    { name: 'Nasi Ayam Kremes',              price: '25',                        desc: 'Ayam goreng kremes dengan sambal dan lalapan.' },
+    { name: 'Ricebowl Katsu',                price: '20',                        desc: 'Nasi + chicken katsu, simple & filling.' },
+    { name: 'Ricebowl Chicken Pop',          price: '22',                        desc: 'Ayam pop crispy di atas nasi hangat.' },
+    { name: 'Ricebowl Beef (BBQ/Teriyaki)',  price: '25',                        desc: 'Beef ricebowl dengan 4 pilihan saus.' },
+    { name: 'Bakmi Ayam Bara',               price: '18-22',                     desc: 'Bakmi homemade · ayam, kecap, atau panggang.' },
+    { name: 'Mie Tek-Tek / Mie Goreng',      price: '20',                        desc: 'Mie tek-tek gerobakan vibe, atau mie goreng.' },
+    { name: 'Spaghetti / Fettucini',         price: '25',                        desc: 'Pasta dengan saus pilihan, ala Bara.' },
+  ],
+  snacks: [
+    { name: 'Indomie Rebus / Goreng',        price: '12-15',                     desc: 'Indomie segala mood, dengan topping pilihan.' },
+    { name: 'Cireng Rujak',                  price: '15',                        desc: 'Cireng dengan sambal rujak, pedas-asin.' },
+    { name: 'Pisang Keju',                   price: '13',                        desc: 'Pisang goreng dengan parutan keju & susu.' },
+    { name: 'Siomay Goreng / Onion Ring',    price: '15',                        desc: 'Cemilan goreng favorit semua kalangan.' },
+    { name: 'Kentang / Mix Platter',         price: '15-25', tag: 'Sharing',     desc: 'French fries atau mix platter buat sharing.' },
+    { name: 'Tulang Rangu / Tahu Cabe Garam',price: '20',                        desc: 'Pendamping kopi yang gurih & bikin nagih.' },
+    { name: 'Tempe Mendoan',                 price: '15',                        desc: 'Tempe mendoan crispy dengan sambal kecap.' },
+    { name: 'Risol (Mayo / Matcha / Choco)', price: '5',                         desc: 'Risol kekinian, minimal 2 pcs.' },
+  ],
+}
